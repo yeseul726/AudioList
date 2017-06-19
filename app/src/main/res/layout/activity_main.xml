@@ -6,32 +6,31 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="yeseul.kr.hs.emirim.audiolist.MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6ss"
-        android:background="#ffe0d9"
+        android:layout_weight="6"
+        android:background="#ffe6e4"
         >
         <ListView
             android:id="@+id/List_music"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-
+            android:layout_height="wrap_content">
         </ListView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
+        android:gravity="center"
         >
         <Button
             android:id="@+id/but_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Play"
+            android:text="play"
             />
         <Button
             android:id="@+id/but_stop"
@@ -39,14 +38,15 @@
             android:layout_height="wrap_content"
             android:text="Stop"
             />
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
         >
         <TextView
             android:id="@+id/text_music"
@@ -60,8 +60,5 @@
             android:layout_height="wrap_content"
             android:visibility="invisible"
             />
-
-
     </LinearLayout>
-
 </LinearLayout>
